@@ -1,0 +1,26 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: 100% 100%;
+	text-align: center;
+
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+.ly{
+    width: 1000px;
+    height: 1000px;
+}
+#ly-1{
+    width: 1000px;
+    height: 20px;
+    color: white;
+}
+#ly-2{
+    width: 1000px;
+    height: 20px;
+}

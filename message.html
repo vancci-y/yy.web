@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcom to yy's blog!</title>
+    <link rel="stylesheet" href="message.css">
+</head>
+<body background="./images/首页背景图.jpg">
+    <header>
+        <p>———欢迎来到小羊的个人网页———</p>
+    </header>
+    <ul>
+        <li> <a href="index.html">首页</a></li>
+        <li> <a href="picture.html">照片墙</a></li>
+        <li> <a href="friends.html">日志</a></li>
+        <li> <a href="introduce.html">个人简介</a></li>
+        <li> <a href="message.html">给我留言</a></li>
+    </ul>
+    <div id="letter">
+        <h1>
+            留下想对我说的话
+        </h1>
+        <!-- 留言表单 -->
+        <form action="./complete.html" method="post">
+            <div class="tableRow">
+                <p>
+                    姓名：
+                    <input type="text" name="names" id="neme" min="1" max="10">
+                </p>
+            </div>
+            <div class="tableRow">
+                <p>
+                    留言类型：
+                    <select name="grade">
+                      <option value="请选择类型">         </option>
+                      <option value="工作">工作</option>
+                      <option value="学习">学习</option>
+                      <option value="个人">个人</option>
+                      <option value="情感">情感</option>
+                    </select>
+                </p>
+            </div>
+            <div class="tableRow">
+                <p> 
+                    留言: 
+                    <textarea name="letters"></textarea>
+                </p>
+            </div>
+            <div class="tableRow label">
+                <p>
+                    日期：
+                    <input type="date" name="date">
+                </p>
+            </div>
+            <div class="tableRow">
+                <p>
+                    <input type="submit" value="restore Now"> 
+                </p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>web前端开发-杨娅@2954803568@qq.com</p>
+    </footer>
+
+</body>
+</html>

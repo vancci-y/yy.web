@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcom to yy's blog!</title>
+    <link rel="stylesheet" href="friends.css">
+</head>
+<body onload="roll()" background="./images/首页背景图.jpg">
+    <header>
+        <h1>———欢迎来到小羊的个人网页———</h1>
+    </header>
+    <ul>
+        <li> <a href="index.html">首页</a></li>
+        <li> <a href="picture.html">照片墙</a></li>
+        <li> <a href="friends.html">日志</a></li>
+        <li> <a href="introduce.html">个人简介</a></li>
+        <li> <a href="message.html">给我留言</a></li>
+    </ul>
+    <!-- 分为两个大div盒子food和friend,每一个盒子里有两个小盒子 -->
+    <div class="food">
+        <h2>世界那么大我要去吃吃看！</h2 >
+        <div class="imgBox">
+            <img  class="img-slide img1" src="./images/吃吃喝喝2.jpg" alt="美食">
+            <img class="img-slide img2" src="./images/吃吃喝喝1.jpg" alt="美食">
+            <img class="img-slide img3" src="./images/吃吃喝喝4.jpg" alt="美食">
+            <img  class="img-slide img4" src="./images/美食2.jpg" alt="美食">
+        </div>
+        <div class="wenzi1">
+            <p>人间不值得，但火锅烧烤麻辣烫串串</p>
+            <p>烤鸭珍珠奶茶芒果布丁</p>
+            <p>糯米鸡酸菜鱼肉夹馍凉皮虾饺蟹脚灌汤包</p>
+            <p>螺丝粉过桥米线抹茶蛋糕爆米花</p>
+            <p>炸鸡可乐蛋挞手抓饼青团云吞面章鱼丸子</p>
+            <p>肠粉陈村粉烧肉叉烧</p>
+            <p>老婆饼鸡蛋仔鱼蛋碗仔翅车仔面椰子鸡</p>
+            <p>值得</p>
+        </div>
+    </div>
+    <div class="friends">
+        <h2>我们是一起打劫时间的伙伴！</h2>
+        <div class="vd">
+            <video controls><source src="./video/zhlpl.mp4"type="video/mp4">
+            </video>
+        </div>
+        <div class="wenzi2">
+            <p>什么是好朋友?</p>
+            <p>是上一秒还聊着天</p>
+            <p>下一秒就捧着蛋糕出现在楼下为我庆祝生日</p>
+            <p>是随口一句过年没有烟花看了好遗憾</p>
+            <p>便跑到郊区去放烟花</p>
+            <p>是在对方焦虑时，默默陪伴</p>
+            <p>再来一句，大不了我们一起进电子厂</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <h4>web前端开发作业-杨娅-295483568@qq.com</h4>
+    </footer>
+    </body>
+    <script type="text/javascript">
+        var index=0;
+        // 效果
+        function ChangeImg() {
+            index++;
+            var a=document.getElementsByClassName("img-slide");
+            if(index>=a.length) index=0;
+            for(var i=0;i<a.length;i++){
+                a[i].style.display='none';
+            }
+            a[index].style.display='block';
+        }
+        //设置定时器，切换图片
+        setInterval(ChangeImg,2000);
+    </script>
+    </html>
